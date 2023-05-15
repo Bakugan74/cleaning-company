@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Заказ клининговой компании</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+
+    <h1>Заказ клининговой компании</h1>
+    <form>
+        <label for="manager">Менеджер:</label>
+        <select id="manager" name="manager">
+            <option value="">Выберите менеджера</option>
+            <option value="Иванов Иван Иванович">Иванов Иван Иванович</option>
+            <option value="Петров Петр Петрович">Петров Петр Петрович</option>
+            <option value="Сидорова Анна Ивановна">Сидорова Анна Ивановна</option>
+        </select>
+        <label for="surname">Фамилия:</label>
+        <input type="text" id="surname" name="surname" required>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="patronymic">Отчество:</label>
+        <input type="text" id="patronymic" name="patronymic">
+        <label for="cleaning-type">Выберите тип уборки:</label>
+        <select id="cleaning-type" name="cleaning-type">
+            <option value="">Выберите тип уборки</option>
+            <option value="Генеральная уборка">Генеральная уборка</option>
+            <option value="Ежедневная уборка">Ежедневная уборка</option>
+            <option value="Разовая уборка">Разовая уборка</option>
+        </select>
+        <label for="date">Дата:</label>
+        <input type="date" id="date" name="date">
+        <label for="comment">Комментарий:</label>
+        <textarea id="comment" name="comment"></textarea>
+        <button type="button" id="submit">Сформировать заказ</button>
+    </form>
+    <div class="order-preview">
+        <h2>Предварительный заказ:</h2>
+        <div id="order-details"></div>
+        <button type="button" id="confirm-back">Назад</button>
+        <button type="button" id="confirm">Подтвердить</button>
+    </div>
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
