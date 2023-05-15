@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Montserrat:ital,wght@0,600;1,300&display=swap');
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #333;
     background-color: #ccc;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
+    background: linear-gradient(#c9e5e9, #ccddf9);
+    height: 100vh;
+
 }
-.start-page{
+
+.start-page {
     background-color: #4CAF50;
     width: 100vw;
     height: 100vh;
@@ -19,7 +26,7 @@ h2 {
 }
 
 form {
-    background-color: #fff;
+    background-color: none;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -28,31 +35,59 @@ form {
 }
 
 label {
+    font-size: 18px;
     display: block;
     margin: 10px 0;
+    font-family: 'Montserrat', sans-serif, Bold;
 }
+
 
 input,
 select,
 textarea {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    color: #030303;
     width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid #8f8e8e;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #615a5a;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: none;
 }
+
+
 
 select option:first-child {
     color: #ccc;
 }
+
 button {
-    background-color: #4CAF50;
-    color: #fff;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
     cursor: pointer;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    border: 1px solid #ccc;
+    color: #030303;
+    background-color: rgba(0, 0, 0, 0.15);
 }
-textarea{
+
+button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+textarea {
     resize: vertical;
 }
 
@@ -64,7 +99,9 @@ textarea{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin: 20px auto auto;
     max-width: 600px;
+    background: none;
 }
+
 
 #order-details {
     margin: 10px 0;

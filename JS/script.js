@@ -25,10 +25,10 @@ window.addEventListener('load', function () {
         var comment = commentTextarea.value;
 
         // Если какое-то поле не заполнено, выводим сообщение и не формируем заказ
-        // if (!manager || !surname || !name || !cleaningType || !date) {
-        //     alert('Пожалуйста, заполните все обязательные поля!');
-        //     return;
-        // }
+        if (!manager || !surname || !name || !cleaningType || !date) {
+            alert('Пожалуйста, заполните все обязательные поля!');
+            return;
+        }
         document.querySelector('form').style.display = 'none';
         document.querySelector('.order-preview').style.display = 'block';
         //Собираем информацию о заказе и выводим ее в поле предварительного заказа
@@ -60,5 +60,6 @@ window.addEventListener('load', function () {
 
         // Выводим информацию о заказе в консоль браузера
         console.log(orderInfo);
+        alert('Заказ успешно оформлен!')
     });
 });
