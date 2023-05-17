@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
     confirmButton.addEventListener('click', function () {
         // Получаем информацию о заказе из поля предварительного заказа
         var orderInfo = orderDetails.innerHTML;
-
+        window.location.reload();
         // Проверяем, что предварительный заказ не пустой
         if (!orderInfo) {
             alert('Пожалуйста, сформируйте заказ!');

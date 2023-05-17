@@ -10,13 +10,6 @@ body {
     overflow: hidden;
     background: linear-gradient(#c9e5e9, #ccddf9);
     height: 100vh;
-
-}
-
-.start-page {
-    background-color: #4CAF50;
-    width: 100vw;
-    height: 100vh;
 }
 
 h1,
@@ -68,7 +61,7 @@ select option:first-child {
 button {
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 12px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
