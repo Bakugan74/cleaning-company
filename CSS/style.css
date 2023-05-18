@@ -9,7 +9,6 @@ body {
     padding: 0;
     overflow: hidden;
     background: linear-gradient(#c9e5e9, #ccddf9);
-    height: 100vh;
 }
 
 h1,
@@ -102,4 +101,9 @@ textarea {
 
 #confirm {
     margin-top: 10px;
+}
+@media screen and (max-width: 1000px) {
+    body {
+        overflow:scroll;
+    }
 }
